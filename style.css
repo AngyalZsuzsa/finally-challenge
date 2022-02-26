@@ -40,7 +40,9 @@ body {
 .material-icons.md-36 {
     font-family: 'Material Icons';
     font-size: 36px;
-    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 #root {
@@ -71,6 +73,7 @@ h1 {
     color:#145434;
 }
 
+
 hr {
     margin-bottom: 6px;    
     width: 100%;
@@ -88,7 +91,7 @@ hr {
     
     margin: 40px 0;
     padding: 40px;
-  
+    
     background-color: #145434;
     color: #ffeedf; 
 }
@@ -106,7 +109,7 @@ hr {
     height: 40px;
     border: 2px solid #145434;
     border-radius: 50%;
-
+    
     background-color: #ffeedf;
     color: #145434;
     font-size: 24px;
@@ -134,12 +137,12 @@ button {
     position: absolute;
     right: -10px;
     bottom: -10px;
-
+    
     border: #145434 1px solid;
     width: 200px;
     height: 50px;
     padding-left: 50px;
-
+    
     background-color: #ffeedf;
     color: #145434; 
     
@@ -148,7 +151,7 @@ button {
 
 .details {
     font-size: 14px;
-
+    
     position: absolute;
     top:50%;
     left:50%;
@@ -160,6 +163,7 @@ button:hover {
     color: #ffeedf;
     border: #ffeedf 1px solid;
 }
+
 
 @media  (max-width:940px) {
     #root {
