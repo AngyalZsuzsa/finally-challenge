@@ -1,0 +1,172 @@
+* {margin: 0;padding: 0;border: 0;background:transparent;outline:none;text-decoration:none;outline:none;font-family:inherit;box-sizing:border-box;
+}
+
+ol,
+ul,
+li {
+  display:block;
+  list-style:none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing:0;
+}
+
+a img {
+  border: none;
+}
+
+button a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button input textarea select {
+    appearance: none !important;
+    -webkit-appearance: none !important; 
+    border-radius: 0;
+}
+
+
+body {
+    background-color: #ffeedf;
+}
+
+.material-icons.md-36 {
+    font-family: 'Material Icons';
+    font-size: 36px;
+    padding-left: 100px;
+}
+
+#root {
+    max-width: 1200px;
+    min-height: 100vh;
+    
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 60px;
+    justify-content: center;    
+    
+    font-family: 'Space Grotesk', sans-serif;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+h1 {
+    margin: 12px;
+    font-size: 36px;
+    color:#145434;
+}
+
+hr {
+    margin-bottom: 6px;    
+    width: 100%;
+    height: 1.5px;
+    background-color: gray;
+}
+
+.data-card {
+    width: 400px;
+    height: 220px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin: 40px 0;
+    padding: 40px;
+  
+    background-color: #145434;
+    color: #ffeedf; 
+}
+
+.data-card::before {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    content: attr(data-index);
+    
+    width: 40px; 
+    height: 40px;
+    border: 2px solid #145434;
+    border-radius: 50%;
+
+    background-color: #ffeedf;
+    color: #145434;
+    font-size: 24px;
+
+    transform: translate(-50%, -50%); 
+}
+
+.data-card h2 {
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.data-card h4 {
+    font-size: 18;
+    font-weight: 400;
+}
+
+.data-card h5 {    
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+
+    border: #145434 1px solid;
+    width: 200px;
+    height: 50px;
+    padding-left: 50px;
+
+    background-color: #ffeedf;
+    color: #145434; 
+    
+    cursor: pointer;
+}
+
+.details {
+    font-size: 14px;
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+button:hover {
+    background-color: #145434; 
+    color: #ffeedf;
+    border: #ffeedf 1px solid;
+}
+
+@media  (max-width:940px) {
+    #root {
+        grid-template-columns: auto;
+
+    }
+}
+
+
+
