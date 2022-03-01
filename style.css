@@ -76,7 +76,7 @@ body {
     flex-wrap: wrap;
     gap: 60px;
     justify-content: center;
-    margin: 60px auto
+    margin: auto;
    
 }
 
@@ -86,7 +86,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    border-bottom: var(--secondary) 2px solid;
+}
+
+#fixed {
+    overflow: hidden;
+    background-color: var(--primary);
+    z-index: 1;
 }
 
 h1 {
