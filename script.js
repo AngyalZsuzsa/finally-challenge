@@ -1,10 +1,10 @@
-function dataView(pm, index) {
+function dataView(data, index) {
     return `
         <div data-index="${index+1}" class="data-card">
-            <h2>${pm.title}</h2>
-            <hr></hr>
-            <h4>${pm.sub}</h4>
-            <h5>${pm.text}</h5>
+            <h2>${data.title}</h2>
+            
+            <h4>${data.sub}</h4>
+            <h5>${data.text}</h5>
             <button><span class="details">details</span><span class="material-icons md-36">arrow_forward</span></button>
         </div>`
 }
